@@ -46,3 +46,10 @@ The ``trigger_mode`` field specifies the trigger mode (0: Edge, 1: Level).
 The ``interrupt_mask`` field is set to 1 to mask the interrupt (cause it to be ignored).
 
 The ``dest_field`` field specifies the Logical/Physical ID of the target Local APIC(s)
+
+## The APIC bus
+
+On older machines, there was a 3-wire Inter-APIC bus that allowed the I/O APIC to broadcast interrupt
+messages to Local APIC(s) on the system. This bus also allowed Inter-processor interrupts (IPIs) to be sent
+by a Local APIC. Starting with the Pentium 4 and Intel Xeon processors, APIC messages are now transmitted
+over the system bus.
