@@ -29,7 +29,7 @@ union ioapic_redentry {
 
 The ``vector`` field specifies the target interrupt vector that this interrupt will be serviced by.
 
-The ``delmod`` is the delivery mode. This can be:
+The ``delmod`` field is the delivery mode. This can be:
 
 Fixed: 000b, Lowest priority: 001b, SMI: 010b, NMI: 100b, INIT: 101b and ExtINT: 111b
 
